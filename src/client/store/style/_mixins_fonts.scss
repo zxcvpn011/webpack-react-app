@@ -1,0 +1,11 @@
+@mixin cairo {
+  font-family: 'Cairo', sans-serif
+}
+
+@mixin messiri {
+  font-family: 'El Messiri', sans-serif
+}
+
+@mixin native_font {
+  font-family: Verdana, Tahoma, 'Segoe UI', Geneva, sans-serif
+}

@@ -1,0 +1,29 @@
+@import "./mixins";
+
+#sliders-container {  
+  @include dodger;
+}
+
+#sliders-container-body {
+  min-height: 80vh;
+}
+
+// .sliders-container-body {}
+
+.sliders {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 80vh;
+}
+
+.sliders-item-header {
+  padding: 15px;
+}
+.sliders-item-body {
+  padding: 15px;
+}
+.sliders-item-footer {
+  padding: 15px;
+}

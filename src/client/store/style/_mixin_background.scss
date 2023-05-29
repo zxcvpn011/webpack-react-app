@@ -1,0 +1,16 @@
+@mixin dodger {
+  background-color: dodgerblue;
+  color: #fff;
+}
+@mixin sky {
+  background-color: deepskyblue;
+  color: #fff;
+}
+@mixin white {
+  background-color: #fff;
+  color: #000;
+}
+@mixin blackgery {
+  background-color: #282c34;
+  color: #fff;
+}

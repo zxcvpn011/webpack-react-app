@@ -1,0 +1,86 @@
+@import './mixins.scss';
+
+nav {
+  @include flex-between;
+  @include blackgery;
+}
+.nav-logo-container {
+  min-height: 100px;
+  min-width: 100px;
+  @include flex-center;
+}
+.nav-logo {
+  height: 100%;
+  width: 100%;
+}
+.nav-items-container {
+  @include flex-between;
+  margin: 15px 10px;
+}
+
+.nav-items {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-bottom: 2px solid transparent;
+}
+
+.nav-items:hover {
+  border-bottom-color: #fff;
+}
+
+.nav-bars {
+  @extend .nav-items;
+  cursor: pointer;
+}
+
+.side-nav-wrapper {
+  position: fixed;
+  background-color: rgba($color: #000000, $alpha: 0.2);
+  left: 0; top: 0;
+  height: 100%;
+  width: 100%;
+  direction: rtl;
+  animation: showWrapper 0.5s linear;
+}
+
+.side-nav {
+  width: 30%;
+  background-color: #282c34;
+  height: 100%;
+  animation: showSide 0.5s;
+  position: absolute;
+  padding: 25px 0;
+  white-space: nowrap;
+}
+
+@keyframes showWrapper {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes showSide {
+  from {
+    right: -25%;
+  }
+  to {
+    right: 0;
+  }
+}
+
+.side-nav-items-wrapper {
+  margin: 5px;
+}
+
+.side-nav-items {
+  @extend .nav-items;
+  border: 0;
+  display: block;
+}
+.side-nav-items:hover {
+  @include dodger;
+}

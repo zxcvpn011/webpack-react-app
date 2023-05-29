@@ -1,0 +1,30 @@
+@import "./mixin_background";
+@import "./mixins_fonts";
+
+@mixin flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@mixin flex-between-col {
+  @include flex-between;
+  flex-direction: column;
+}
+@mixin flex-center {
+  @include flex-between;
+  justify-content: center;
+}
+@mixin flex-center-col {
+  @include flex-center;
+  flex-direction: column;
+}
+@mixin pxy-10-20 {
+  padding: 10px 20px;
+}
+@mixin no-border {
+  border: 0;
+  outline: 0;;
+}
+@mixin rounded {
+  border-radius: 25px;
+}
